@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bp</title>
+  <title>BUILDING PROTECTORS Complaints Management Solutions</title>
   <%= stylesheet_link_tag :all %>
+	<%= stylesheet_link_tag 'blueprint/screen', 'styles', :media => 'screen' %>
+	<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
   <%= javascript_include_tag :defaults %>
+	<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js", "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+		<div class="header">
+			<div class="container">
+				<div id="logo">
+					<%= link_to 'Home', {:controller => 'home', :action => 'index'}, :id => 'logo' %>
+				</div>
+			</div>
+		</div>
 
-<%= yield %>
-
+		<div class="container">
+			<%= yield %>
+		</div>
 </body>
 </html>

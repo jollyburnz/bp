@@ -1,0 +1,14 @@
+body{
+	background: #E8E8E8;
+}
+a#logo{
+	background: url(../images/logo06.png) no-repeat left 0;
+	display: block;
+	height: 55px; width: 470px;
+	position: relative;
+	text-indent: -99999px;
+}
+
+a#logo:hover{
+	background-position: left -55px;
+}
